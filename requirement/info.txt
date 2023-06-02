@@ -1,0 +1,32 @@
+Write a PHP script which takes a string as argument.
+
+The PHP script should process the provided string as the instructions of a path through a 5 x 5 matrix from the top left corner of the matrix to the bottom right corner of the matrix.
+The instructions can be:
+- R (right)
+- L (left)
+- U (up)
+- D (down)
+- ?
+
+The output of the script should be the same string as the input, but with the question marks replaced by the correct instructions.
+So the purpose of the script is to figure out which instructions need to be in the places of the question marks.
+Final rule of the puzzle: every cell in the matrix can only be passed through once.
+
+Examples:
+- input: ‘R?D?DRDD’, expected output: 'RRDRDRDD'.
+- input: ‘RRRRDDDL??', expected output: 'RRRRDDDLDR'.
+- input: ‘RRDLDLD?RUR?RD', expected output: ‘RRDLDLDDRURRRD’.
+
+
+
+development
+
+ - git checkout -b feature/matrix-puzzle
+ - do your code
+ - push your work in feature/matrix-puzzle
+ - you can create PR/MR agains development branch.
+
+ - Once it is reviewed and merged into development branch,
+ - then we will create another PR/MR of development branch against master branch
+ - merge into master
+ - final release
